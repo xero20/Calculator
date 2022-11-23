@@ -22,10 +22,15 @@ namespace Calculator
 
         }
 
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            label2.Text = "after click 4";
+            Button btnTmp = (Button)sender;
+            textBox1.Text += btnTmp.Text;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
