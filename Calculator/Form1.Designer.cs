@@ -49,6 +49,8 @@
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -150,6 +152,7 @@
             this.button10.TabIndex = 9;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button1_Click);
             // 
             // button11
             // 
@@ -160,6 +163,7 @@
             this.button11.TabIndex = 10;
             this.button11.Text = "-";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button1_Click);
             // 
             // button12
             // 
@@ -170,6 +174,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = "x";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button1_Click);
             // 
             // button13
             // 
@@ -210,6 +215,7 @@
             this.button16.TabIndex = 15;
             this.button16.Text = "/";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button1_Click);
             // 
             // button17
             // 
@@ -250,6 +256,7 @@
             this.button20.TabIndex = 19;
             this.button20.Text = "=";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // textBox1
             // 
@@ -263,9 +270,33 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button21
+            // 
+            this.button21.Font = new System.Drawing.Font("맑은 고딕", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button21.Location = new System.Drawing.Point(352, 142);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(59, 23);
+            this.button21.TabIndex = 21;
+            this.button21.Text = "Del";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(340, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 31);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "result";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(478, 538);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button21);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
@@ -316,6 +347,8 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Label label1;
     }
 }
 

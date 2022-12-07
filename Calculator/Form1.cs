@@ -32,5 +32,29 @@ namespace Calculator
         {
 
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            string[] plusSplit = textBox1.Text.Split('+');
+            double result = 0;
+
+            for (int i=0; i<plusSplit.Length; i++)
+            {
+                Console.WriteLine(plusSplit[i]);
+                result += Convert.ToDouble(plusSplit[i]);
+            }
+
+            label1.Text = Convert.ToString(result);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
